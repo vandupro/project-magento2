@@ -1,0 +1,5 @@
+<?php
+$_item = $block->getParentBlock()->getItem();
+$format = $this->helper('Magento\Framework\Pricing\Helper\Data');
+?>
+<span>Payment Fee: <?= $format->currency($_item->getData('payment_fee'), true, false)?></span>

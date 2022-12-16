@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_totals">
+            <block class="Cowell\ProductShippingMethod\Block\Email\Order\Totals" name="new.order.totals" />
+        </referenceBlock>
+
+        <referenceBlock name="additional.product.info">
+            <block name="payment_fee_item" template="Cowell_ProductShippingMethod::email/payment_fee.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

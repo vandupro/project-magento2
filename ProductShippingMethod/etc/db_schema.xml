@@ -1,0 +1,18 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote_item" resource="sales" comment="Sales Flat Order Item">
+        <column xsi:type="int" name="payment_fee" unsigned="true" nullable="false" identity="false"
+                default="0" comment="Payment fee"/>
+    </table>
+    <table name="sales_order" resource="sales" comment="Sales Flat Order">
+        <column xsi:type="int" name="payment_fee" unsigned="true" nullable="false" identity="false"
+                default="0" comment="payment_fee"/>
+    </table>
+    <table name="sales_order_item" resource="sales" comment="Sales Flat Order Item">
+        <column xsi:type="int" name="payment_fee" unsigned="true" nullable="false" identity="false"
+                default="0" comment="payment_fee"/>
+    </table>
+    <table name="quote" resource="default">
+        <column xsi:type="int" name="payment_fee" padding="11" nullable="true" comment="Payment Fee"/>
+    </table>
+</schema>

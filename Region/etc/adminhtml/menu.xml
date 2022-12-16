@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Cowell_Region::region" title="Regions" translate="title" module="Cowell_Region" sortOrder="10" parent="Magento_Backend::stores_directory" action="cowell_region/index/index/" resource="Cowell_Region::region"/>
+        <add id="Magento_Backend::stores_directory" title="Directory" translate="title" module="Magento_Backend" sortOrder="10" parent="Magento_Backend::stores" resource="Magento_Backend::stores_directory"/>
+    </menu>
+</config>
