@@ -16,4 +16,8 @@
         <plugin name="dropdown_attribute_quote_to_order_item"
                 type="Cowell\ProductShippingMethod\Plugin\CopyPaymentFeeToOrderItem"/>
     </type>
+    <type name="Magento\Quote\Model\ShippingMethodManagement">
+        <plugin name="restrict_shipping_methods_by_product"
+                type="Cowell\ProductShippingMethod\Plugin\RestrictShippingMethodsByProduct"/>
+    </type>
 </config>

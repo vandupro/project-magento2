@@ -3,4 +3,7 @@
     <group name="quote_item">
         <attribute name="payment_fee"/>
     </group>
+    <group name="quote_item">
+        <attribute name="shipping_methods"/>
+    </group>
 </config>

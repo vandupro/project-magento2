@@ -15,5 +15,6 @@ class SavePaymentFeeToQuoteItem implements ObserverInterface
         $quoteItem = $observer->getQuoteItem();
         $product = $observer->getProduct();
         $quoteItem->setPaymentFee($product->getData('payment_fee'));
+        $quoteItem->setShippingMethods($product->getData('shipping_methods'));
     }
 }

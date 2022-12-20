@@ -3,6 +3,8 @@
     <table name="quote_item" resource="sales" comment="Sales Flat Order Item">
         <column xsi:type="int" name="payment_fee" unsigned="true" nullable="false" identity="false"
                 default="0" comment="Payment fee"/>
+        <column xsi:type="text" name="shipping_methods" nullable="true"
+                comment="Shipping methods"/>
     </table>
     <table name="sales_order" resource="sales" comment="Sales Flat Order">
         <column xsi:type="int" name="payment_fee" unsigned="true" nullable="false" identity="false"
